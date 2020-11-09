@@ -5,11 +5,14 @@ class voiture:
         self.prix_modele = prix_modele
         self.couleur = couleur
         self.prix_couleur = prix_couleur
-        self.prix_voiture = prix_voiture()
+        self.prix_voitur = self.prix_voiture()
 
     def prix_voiture(self):
-        return prix_modele*prix_couleur
+        return self.prix_modele*self.prix_couleur
 
 
-# if __name__ == "__main__":
-#     v=input(voiture())
+if __name__ == "__main__":
+    v = voiture("BMW", "Panda", "rouge", 2.5, 2000)
+
+
+print(v.__dict__)
