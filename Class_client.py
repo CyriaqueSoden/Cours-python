@@ -5,7 +5,5 @@ class client:
     def __init__(self, nom, prenom):
         self.nom = nom
         self.prenom = prenom
-        self.budget = self.budge()
+        self.budget = random.randint(300, 5000)
 
-    def budge(self):
-        return random.randint(500, 502)

@@ -5,13 +5,17 @@ liste_voiture =[]
 
 v = voiture()
 h = client("pithon", "mathieu")
+w = 0
 
-
-if h.budget < v.prix_voiture :
-    liste_voiture.append(voiture())
-    print(liste_voiture)
-
-
+while h.budget < v.prix_voiture :
+    w += 1
+    v = voiture()
+    liste_voiture.append(v)
+    if w == 5 :
+        print("pas de voiture dans le budget")
+        break
+    
+    
 
 
 
