@@ -1,4 +1,4 @@
-from Class_voiture import voiture
+from Class_voiture import Voiture
 from Class_client import client
 
 compteur_de_boucle = 0
@@ -7,7 +7,7 @@ liste_client = {}
 
 
 while True :
-    vroum = voiture()
+    vroum = Voiture()
     nom = input("nom  :")
     if nom in liste_client:
         pass
@@ -17,7 +17,7 @@ while True :
 
     while liste_client[nom].budget < vroum.prix_voiture:
         compteur_de_boucle += 1
-        vroum = voiture()
+        vroum = Voiture()
         liste_client[nom].voiture.append(vroum)
         if compteur_de_boucle == 5:
             print("pas de voiture dans le budget")
