@@ -10,7 +10,6 @@ compteur_de_boucle = 0
 while mathieu.budget < vroum.prix_voiture :
     compteur_de_boucle += 1
     vroum = voiture()
-    liste_voiture.append(vroum)
     if compteur_de_boucle == 5 :
         print("pas de voiture dans le budget")
         break
