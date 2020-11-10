@@ -1,6 +1,6 @@
-from Class_consession import *
+from Class_voiture import voiture
 from Class_client import client
-import random
+
 liste_voiture =[]
 
 v = voiture()
