@@ -4,10 +4,10 @@ from Class_client import client
 liste_voiture =[]
 
 vroum = voiture()
-mathieu = client("pithon", "mathieu")
+Cyriaque = client("Cyriaque", "Soden")
 compteur_de_boucle = 0
 
-while mathieu.budget < vroum.prix_voiture :
+while Cyriaque.budget < vroum.prix_voiture :
     compteur_de_boucle += 1
     vroum = voiture()
     if compteur_de_boucle == 5 :
@@ -19,4 +19,4 @@ while mathieu.budget < vroum.prix_voiture :
 
 
 print(vroum.__dict__)
-print(mathieu.__dict__)
+print(Cyriaque.__dict__)
